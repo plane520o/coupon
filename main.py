@@ -146,7 +146,7 @@ def takePhoto(): #保存摄像头画面并识别图片
 
 def faquan(): #沃尔玛发券函数
     carno = ui.lineEdit.text()
-    url = 'http://www.wsgdgw.com:8080/Account/Login'
+    url = '*'
     headers = {
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36'
     }
