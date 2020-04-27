@@ -181,6 +181,8 @@ if __name__ == '__main__':
     CAM_NUM = 0
     if timer_camera.isActive() == False:
         flag = cap.open(CAM_NUM)
+        cap.set(3, 1920)
+        cap.set(4, 1080)
         if flag == False:
             msg = QtWidgets.QMessageBox.warning(
                 u"Warning", u"请检测相机与电脑是否连接正确",
