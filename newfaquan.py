@@ -16,7 +16,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(1141, 608)
-        MainWindow.setWindowFlags(Qt.FramelessWindowHint)
+        #MainWindow.setWindowFlags(Qt.FramelessWindowHint)
         MainWindow.setStyleSheet("background:pink;\n"
 "")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
@@ -27,6 +27,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_2.setObjectName("horizontalLayout_2")
         self.label = QtWidgets.QLabel(self.centralwidget)
+        self.label.setMaximumSize(QtCore.QSize(600, 600))
         self.label.setStyleSheet("color:#232C51;\n"
 "background:white;\n"
 "border-top:1px solid darkGray;\n"
@@ -70,6 +71,7 @@ class Ui_MainWindow(object):
         font.setBold(True)
         font.setWeight(87)
         self.label_2.setFont(font)
+        self.label_2.setMaximumSize(QtCore.QSize(600, 800))
         self.label_2.setStyleSheet("border-image: url(:/img/空白.jpg);\n"
 "color:white;\n"
 "background:white;\n"

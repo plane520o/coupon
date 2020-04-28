@@ -33,7 +33,7 @@ def slot_init():   #函数槽
 def showcamera(): #展示摄像头画面到ui.label
     global image
     flag, image = cap.read()
-    image = cv2.flip(image, 1)
+    #image = cv2.flip(image, 1)
     show = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
     showImage = QtGui.QImage(show.data, show.shape[1], show.shape[0], QtGui.QImage.Format_RGB888)
     ui.label.setPixmap(QtGui.QPixmap.fromImage(showImage))
@@ -191,10 +191,10 @@ if __name__ == '__main__':
         else:
             timer_camera.start(30)
     #####
-    MainWindow.setWindowState(Qt.WindowMaximized) #窗口最大化
+    #MainWindow.setWindowState(Qt.WindowMaximized) #窗口最大化
 
 
-    MainWindow.showFullScreen() #窗口全屏
+    #MainWindow.showFullScreen() #窗口全屏
     ui.label_2.setAlignment(Qt.AlignCenter)
     slot_init()
     ui.pushButton_2.setEnabled(False)
